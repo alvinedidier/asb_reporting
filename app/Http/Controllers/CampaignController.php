@@ -16,6 +16,7 @@ class CampaignController extends Controller
     public function index()
     {
         //
+        echo "in"; exit;
     }
 
     /**

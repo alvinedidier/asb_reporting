@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Advertiser extends Model
 {
     use HasFactory;
+
+    /**
+    * The table associated with the model.
+    *
+    * @var string
+    */
+   protected $table = 'asb_advertisers';
+   
 }

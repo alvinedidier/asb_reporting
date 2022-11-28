@@ -7,5 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class FormatTemplate extends Model
 {
-    use HasFactory;
+    use HasFactory;    
+    
+    /**
+    * The table associated with the model.
+    *
+    * @var string
+    */
+   protected $table = 'asb_formats_templates';
+   
+
 }

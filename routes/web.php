@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CampaignController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+ 
+Route::controller(CampaignController::class)->group(function () {
+    Route::get('/campaigns', 'index');
+    Route::get('/campaigns/{id}', 'show');
+    Route::post('/campaigns', 'store');
 });

@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class RoleUser extends Model
 {
     use HasFactory;
+        
+    
+    /**
+    * The table associated with the model.
+    *
+    * @var string
+    */
+   protected $table = 'asb_roles_users';
+   
+
 }
